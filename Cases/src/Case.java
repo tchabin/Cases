@@ -1,7 +1,20 @@
+import java.awt.Color;
+import java.util.HashMap;
 
-public interface Case {
+public abstract class Case {
 
+	HashMap<Case,Integer> InCases;
+	HashMap<Case,Integer> OutCases;
+	Color caseColor;
 	
+	HashMap<Integer,Object> InMsg;
+	
+	public abstract void run();
+	
+	public void addMsg(Case c,Object msg){
+		Integer i = InCases.get(c);
+		InMsg.put(i, msg);
+	}
 	
 	
 }
