@@ -6,8 +6,6 @@ public abstract class Case {
 	HashMap<Case,Integer> InCases;
 	HashMap<Case,Integer> OutCases;
 	Color caseColor;
-	boolean useless;
-	boolean tryagain;
 	
 	HashMap<Integer,Object> InMsg;
 	
@@ -18,7 +16,4 @@ public abstract class Case {
 		InMsg.put(i, msg);
 	}
 	
-	
-	//Autre test20
-//test 	
 }
