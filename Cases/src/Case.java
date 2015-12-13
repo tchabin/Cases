@@ -19,6 +19,6 @@ public abstract class Case {
 	}
 	
 	
-	//Autre test
+	//Autre test2
 //test 	
 }
