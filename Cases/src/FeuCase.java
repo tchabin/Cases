@@ -1,5 +1,6 @@
 import java.awt.Color;
 import java.util.HashMap;
+import java.util.Map.Entry;
 
 public class FeuCase extends Case<Integer> {
 	private int temperature;
@@ -30,6 +31,11 @@ public class FeuCase extends Case<Integer> {
 		else if (temperature <40) super.setCaseColor(Color.YELLOW);
 		else if (temperature <60) super.setCaseColor(Color.RED);
 		else if (temperature <80) super.setCaseColor(Color.BLUE);
+		
+		/*for(Entry ent:inMsg.entrySet().iterator()){
+			
+		}*/
+		
 		
 	}
 	
