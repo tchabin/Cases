@@ -7,6 +7,7 @@ public abstract class Case {
 	HashMap<Case,Integer> OutCases;
 	Color caseColor;
 	
+	
 	HashMap<Integer,Object> InMsg;
 	
 	public abstract void run();
