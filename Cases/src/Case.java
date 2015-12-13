@@ -18,5 +18,7 @@ public abstract class Case {
 		InMsg.put(i, msg);
 	}
 	
+	
+	//Autre test
 //test 	
 }
