@@ -23,7 +23,10 @@ public class Univers {
 		for(CaseSimple[] ligne:univers){
 			
 			for(CaseSimple c:ligne){
-				msg+=" "+c.getChar();
+				if (c==null)
+					msg+=" 0";
+				else
+					msg+=" "+c.getChar();
 			}
 			msg+="\n";
 			
@@ -38,7 +41,6 @@ public class Univers {
 		u.remplacerCase(new FeuCase(50), 0, 0);
 		u.remplacerCase(new FeuCase(50), 0, 1);
 		u.remplacerCase(new FeuCase(50), 1, 0);
-		u.remplacerCase(new FeuCase(50), 1, 1);
 		System.out.println(u);
 	}
 	
