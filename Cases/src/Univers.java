@@ -42,7 +42,7 @@ public class Univers {
 		msg+="╚";
 		for(int i=0;i<taille-1;i++)
 			msg+="═╩";
-		msg+="═╝";
+		msg+="═╝\n";
 		
 		return msg;
 	}
