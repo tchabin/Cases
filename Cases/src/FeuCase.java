@@ -1,8 +1,7 @@
 import java.awt.Color;
 import java.util.HashMap;
-import java.util.Map.Entry;
 
-public class FeuCase extends Case<Integer> {
+public class FeuCase extends CaseSimple<Integer> {
 	private int temperature;
 
 	public FeuCase(int temperature) {
@@ -30,13 +29,19 @@ public class FeuCase extends Case<Integer> {
 		if (temperature <20) super.setCaseColor(Color.WHITE);
 		else if (temperature <40) super.setCaseColor(Color.YELLOW);
 		else if (temperature <60) super.setCaseColor(Color.RED);
-		else if (temperature <80) super.setCaseColor(Color.BLUE);
+		else super.setCaseColor(Color.BLUE);
 		
 		/*for(Entry ent:inMsg.entrySet().iterator()){
 			
-		}*/
-		
-		
+		}*/	
+	}
+
+	@Override
+	public char getChar() {
+		if (temperature <20) return 'W';
+		else if (temperature <40) return 'Y';
+		else if (temperature <60) return 'R';
+		else return 'B';
 	}
 	
 	
