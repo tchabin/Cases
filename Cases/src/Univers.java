@@ -31,11 +31,6 @@ public class Univers {
 			}
 			msg+="║\n";
 			
-
-			msg+="╠";
-			for(int i=0;i<taille-1;i++)
-				msg+="═╬";
-			msg+="═╣\n";
 			
 		}
 		
