@@ -18,26 +18,17 @@ public class Univers {
 	
 	@Override
 	public String toString() {
-		
-		String msg="╔";
-		for(int i=0;i<taille-1;i++)
-			msg+="═╦";
-		msg+="═╗\n";
+		String msg="";
 		
 		for(CaseSimple[] ligne:univers){
 			
 			for(CaseSimple c:ligne){
-				msg+="║"+c.getChar();
+				msg+=" "+c.getChar();
 			}
-			msg+="║\n";
+			msg+="\n";
 			
 			
 		}
-		
-		msg+="╚";
-		for(int i=0;i<taille-1;i++)
-			msg+="═╩";
-		msg+="═╝";
 		
 		return msg;
 	}
