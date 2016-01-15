@@ -1,4 +1,7 @@
+package Feu;
 import java.util.Arrays;
+
+import core.CaseSimple;
 
 public class Univers {
 	private int taille = 2;

@@ -1,3 +1,4 @@
+package core;
 import java.awt.Color;
 import java.util.HashMap;
 
@@ -17,6 +18,27 @@ public abstract class Case<E> {
 
 	protected HashMap<Integer, E> getInMsg() {
 		return InMsg;
+	}
+	
+	
+	public HashMap<Case<E>, Integer> getInCases() {
+		return InCases;
+	}
+
+	public void setInCases(HashMap<Case<E>, Integer> inCases) {
+		InCases = inCases;
+	}
+
+	public HashMap<Case<E>, Integer> getOutCases() {
+		return OutCases;
+	}
+
+	public void setOutCases(HashMap<Case<E>, Integer> outCases) {
+		OutCases = outCases;
+	}
+
+	protected E getInMsg(int i) {
+		return InMsg.get(i);
 	}
 
 	public abstract void run();

@@ -1,0 +1,6 @@
+package GameOfLife;
+
+public enum GOL_State {
+	//TOP,RIGHT,DOWN,LEFT, TOPRIGHT,TOPLEFT,DOWNRIGHT,DOWNLEFT
+	ALIVE,DEAD
+}

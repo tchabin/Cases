@@ -1,5 +1,8 @@
+package Feu;
 import java.awt.Color;
 import java.util.HashMap;
+
+import core.CaseSimple;
 
 public class FeuCase extends CaseSimple<Integer> {
 	private int temperature;
